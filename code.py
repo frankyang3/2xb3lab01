@@ -1,4 +1,5 @@
-def is_valid_groups(student_numbers, groups):
+def are_valid_groups(student_numbers, groups):
+	x = []
 	for group in groups:
 		inside = False
 		for number in student_numbers:
@@ -8,8 +9,12 @@ def is_valid_groups(student_numbers, groups):
 			return False
 		if not inside:
 			return False
+		for y in group:
+			x.append(y)
+	if len(x) != len(set(x)):
+		return False
 	if len(student_numbers) != len(set(student_numbers)):
 		return False
 	return True
 
-print(is_valid_groups([1,2,3,4,4], [[1,2], [3,1], [4,1]]))
+print(are_valid_groups([1,2,3,4,5,6], [[1,2], [3,4], [5,6]]))
