@@ -1,4 +1,4 @@
-def are_valid_groups(student_numbers) -> bool:
+def is_valid_groups(student_numbers, groups):
 	for group in groups:
 		inside = False
 		for number in student_numbers:
@@ -8,4 +8,4 @@ def are_valid_groups(student_numbers) -> bool:
 			return False
 	return True
 
-	random stuff
+print(is_valid_groups([1,2,3,4], [[1,2], [3], [4]]))
