@@ -1,7 +1,7 @@
 def is_valid_groups(students, groups):
     for i in groups:
         for j in i:
-            if(j in students):
+            if (j in students):
                 students.remove(j)
     if not students:
         return True
