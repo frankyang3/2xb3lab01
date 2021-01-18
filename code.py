@@ -7,3 +7,5 @@ def are_valid_groups(student_numbers, groups):
 		if not inside:
 			return False
 	return True
+
+	random stuff
