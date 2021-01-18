@@ -1,11 +1,12 @@
-def is_valid_groups(students, groups):
-    for i in groups:
-        for j in i:
-            if (j in students):
-                students.remove(j)
-    if not students:
-        return True
-    else:
-        return False
-        
-print(is_valid_groups([1,2,3,4], [[1,2], [3], [5]]))
+def are_valid_groups(student_numbers, groups) -> bool:
+	
+	for number in student_numbers:
+		inside = False
+		for group in groups:
+			if number in group:
+				inside = True
+				
+		if not inside:
+			return False
+				
+	return True
