@@ -1,0 +1,5 @@
+The first push went smoothly, everyone could pull then push and see name.txt
+The second push on the same file didn't work as easily,
+After one person pushed, we found that no one else could push. 
+Each of us tried to pull the existing code, but found merge conflicts. We fixed these on at a time on one person's local, and pusehd a working version to the remote
+
