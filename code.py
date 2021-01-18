@@ -1,4 +1,4 @@
-def are_valid_groups(student_numbers, groups) -> bool:
+def are_valid_groups(student_numbers, groups):
 	
 	for number in student_numbers:
 		inside = False
