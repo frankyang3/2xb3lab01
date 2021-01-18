@@ -1,11 +1,12 @@
 def are_valid_groups(student_numbers, groups) -> bool:
-	boolean = False
-	for n in student_numbers:
-		for i in groups:
-			if n in i:
-				boolean = True
+	
+	for number in student_numbers:
+		inside = False
+		for group in groups:
+			if number in group:
+				inside = True
 				
-		if not boolean:
+		if not inside:
 			return False
 				
 	return True
