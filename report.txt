@@ -1,5 +1,8 @@
 The first push went smoothly, everyone could pull then push and see name.txt
 The second push on the same file didn't work as easily,
 After one person pushed, we found that no one else could push. 
-Each of us tried to pull the existing code, but found merge conflicts. We fixed these on at a time on one person's local, and pusehd a working version to the remote
+Each of us tried to pull the existing code, but found merge conflicts. We fixed these on at a time on one person's local, and pusehd a working version to the remotThe final merge conflicts came at the end, with two adversaries vs. one player. This went smoothly as the adversaries ended up changing different portions, resulting in no merge conflicts. The player was easily able to resolve conflicts each time.
+
+We have found a few types of merge conflicts, when two people write on the same file from scratch, when two people change different parts of the file, and when people add new files to the repo. The first is the most difficult to resolve, as you end up with entirely different files. The only way to merge that is by rewriting or rejecting one person's code entirely, erasing work. The second merge conflict I believe would be the most common, and is relatively easy to fix with communication. This requires one person to pull and merge the changes locally, and as long as the local version works after the merge, all is well. The final case is where different people add new files. As long as there aren't duplicate file names, there should be no merge conflicts, making this the easiest case to resolve.
+
 
