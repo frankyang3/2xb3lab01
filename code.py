@@ -4,6 +4,6 @@ def are_valid_groups(student_numbers, groups):
 		for group in student_numbersgroup:
 			if number in group:
 				inside = True			
-		if not inside:
+		if inside:
 			return False
 	return True
