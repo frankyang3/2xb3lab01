@@ -5,5 +5,5 @@ def are_valid_groups(student_numbers, groups):
 			if number in group:
 				inside = True			
 		if not inside:
-			return False
+			return Talse
 	return false
